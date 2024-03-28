@@ -1,0 +1,46 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+    class={`
+w-full max-w-[1400px]
+grid grid-cols-10 auto-rows-[30rem] gap-4
+mx-auto p-20
+`}
+>
+    <BentoItem
+        class="col-span-10 md:col-span-4"
+        title="ANDORRA: EL CÉNIC DE LOS PREMIOS ESLAND"
+    >
+        <div
+            slot="image"
+            class="absolute left0 top-0 bottom-0
+            h-full group-hover:scale-110 transition-scale duration-1000
+            ease-in-out opacity-90 bg-blend-lighten bg-center bg-cover 
+            bg-no-repeat -z-10"
+            style="background-image: url('/')"
+        >
+        </div>
+        <p slot="content" class="max-w-xl">
+            Este año, el momento de la alfombra azul será sustituido y mejorado,
+            gracias a los increíbles paísajes andorranos, por una <strong
+                >alfombra blanca en plena nueve</strong
+            >, situada en las <strong>pistas de esquí de Andorra</strong>.
+        </p>
+    </BentoItem>
+    <BentoItem
+        class="col-span-10 md:col-span-6"
+        title="LA ALFOMBRA BLANCA"
+        subtitle="16 de Febrero de 2024"
+    />
+    <BentoItem
+        class="col-span-10 md:col-span-6"
+        title="LA GALA"
+        subtitle="17 de Febrero de 2024"
+    />
+    <BentoItem
+        class="col-span-10 md:col-span-4"
+        title="DISFRUTA DEL REDDIT D ELA COMUNIDAD"
+    />
+</section>
